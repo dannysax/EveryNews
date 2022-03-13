@@ -1,0 +1,35 @@
+.post-card{
+    height: 320px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.post-card img{
+    width: 250px;
+    height: 180px;
+    left: 65px;
+    top: 257px;
+}
+
+.post-card h2{
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+
+    color: #000229;
+
+}
+
+.post-card p{
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000229;
+}

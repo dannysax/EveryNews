@@ -1,0 +1,18 @@
+.post-category-grid1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 12px;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.category1 h1{
+    margin: 20px 0 0 120px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #00B0F0;
+}

@@ -1,2 +1,2 @@
-export {default as LandingPageScreen} from './LandingPageScreen';
-export {default as SinglePostScreen} from './SinglePostScreen';
+export {default as LandingPageScreen} from './landingpage/LandingPageScreen';
+export {default as SinglePostScreen} from './singlepost/SinglePostScreen';
