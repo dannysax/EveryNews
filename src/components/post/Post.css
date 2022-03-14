@@ -33,3 +33,22 @@
 
     color: #000229;
 }
+
+.post-card2{
+    width: 500px;
+    height: 100%;
+    display: flex;
+}
+
+.post2-items{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.post-card2 img{
+    width: 250px;
+    height: 180px;
+    margin-right: 10px;
+}

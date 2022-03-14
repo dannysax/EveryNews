@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    height: 108px;
+    height: 12vh;
     background: #232323;
     align-items: center;
 }
@@ -15,15 +15,14 @@
     font-family: 'Merriweather Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 18px;
+
 
     color: #FFFFFF;
 }
 
 .navbar-logo img{
-    width: 56px;
-    height: 59px;
-    left: 64px;
+    width: 50px;
+    height: 50px;
     margin-right: 15px;
 }

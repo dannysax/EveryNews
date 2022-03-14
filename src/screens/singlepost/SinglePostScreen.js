@@ -1,10 +1,11 @@
 import React from "react";
+import { Header } from "../../components";
 
 
 function SinglePostScreen(){
     return (
         <React.Fragment>
-            <h1>SinglePostScreen</h1>
+            <Header />
         </React.Fragment>
     )
 }

@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import { Link } from "react-router-dom";
-import getAllPostsAction from "../../actions/postActions";
+import {getAllPostsAction} from "../../actions/postActions";
 import { postData } from "../../components/data/PostData";
 import getAllPostsReducer from "../../reducers/postReducers";
 import Post from "../post/Post";
-import './category.css'
+import './category.css';
+import CategoryTopBar from "./CategoryTopBar";
 
 
 function Category3(){
@@ -22,6 +23,7 @@ function Category3(){
 
     return (
         <div className="category1">
+            <CategoryTopBar text="Category3"/>
             <div className="post-category-grid1">
             {
                 listAllPosts ? (

@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux';
-import { Link } from "react-router-dom";
 import {getAllPostsAction} from "../../actions/postActions";
 import { postData } from "../../components/data/PostData";
 import getAllPostsReducer from "../../reducers/postReducers";
-import Post from "../post/Post";
-import './category.css'
+import Post2 from "../post/Post2";
+import './category.css';
 import CategoryTopBar from "./CategoryTopBar";
+import videoholder from '../../assets/videoholder.png';
 
-
-function Category1(){
+function Category2(){
     const dispatch = useDispatch()
 
     const allPosts = useSelector(state=>state.allPosts)
@@ -23,23 +22,33 @@ function Category1(){
 
     return (
         <div className="category1">
-            <CategoryTopBar text="Category1"/>
-            <div className="post-category-grid1">
+            <CategoryTopBar text="Category2"/>
+            <div className="post-category-grid2">
+                <div className="video-holder">
+                    <div className="video-holder-image">
+                        <img src = {videoholder} alt="everynews-videos" />
+                    </div>
+                </div>
+                <div className="post2-cards">
             {
                 listAllPosts ? (
-                        listAllPosts.slice(0,8).map((post)=>
+                        listAllPosts.slice(5,7).map((post)=>
                         //post.categories === "2" &&
-                        <Post posts={post} key={post.id}/>
+                        
+                        <Post2 posts={post} key={post.id}/>
+                    
                         )
+                  
                         
                 ) : (
              
                     <h2>Content is still loading</h2>
                 )
             }
+                  </div>
             </div>
             
     </div>
     )
 }
-export default Category1;
+export default Category2;
