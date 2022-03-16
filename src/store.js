@@ -1,12 +1,13 @@
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import {getAllPostsReducer, getSinglePostReducer} from "./reducers/postReducers";
+import {createPostCommentReducer, getAllPostsReducer, getSinglePostReducer} from "./reducers/postReducers";
 
 
 const reducers = combineReducers({
     allPosts : getAllPostsReducer,
     singlePost : getSinglePostReducer,
+    createComment : createPostCommentReducer,
 });
 
 const middleware = [thunk]

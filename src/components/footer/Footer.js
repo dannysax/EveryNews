@@ -1,11 +1,14 @@
 import React from "react";
+import './Footer.css';
 
 
 function Footer(){
     return (
-        <React.Fragment>
-            <h1>Footer</h1>
-        </React.Fragment>
+      <div className="footer">
+        <footer className="footer text-center">
+          <h4>Every News copyright &copy; 2021</h4>
+          </footer>
+      </div>
     )
-}
-export default Footer;
+  }
+  export default Footer;

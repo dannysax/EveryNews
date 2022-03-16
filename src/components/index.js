@@ -5,3 +5,5 @@ export {default as Category1} from './categories/Category1';
 export {default as Category2} from './categories/Category2';
 export {default as Category3} from './categories/Category3';
 export {default as Header} from './singleposts/Header';
+export {default as PostBody} from './singleposts/PostBody';
+export {default as Comments} from './singleposts/Comments';

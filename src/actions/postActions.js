@@ -5,7 +5,11 @@ import {
 
     GET_SINGLE_POST_REQUEST,
     GET_SINGLE_POST_SUCCESS,
-    GET_SINGLE_POST_FAIL
+    GET_SINGLE_POST_FAIL,
+
+    CREATE_COMMENT_REQUEST,
+    CREATE_COMMENT_SUCCESS,
+    CREATE_COMMENT_FAIL
 } from '../constants/postConstants';
 import axios from 'axios';
 
@@ -52,5 +56,31 @@ export const getSinglePostAction = (id) => async (dispatch) => {
         });
     }
 }
+
+
+
+export const createPostCommentAction = (id, comment) => async (dispatch) => {
+    try{
+        dispatch({
+            type : CREATE_COMMENT_REQUEST
+        });
+
+        const {data} = await axios.post(`https://brooksandblake.com/blogapis/wp-json/wp/v2/posts/${id}`,
+        comment)
+
+        dispatch({
+            type : CREATE_COMMENT_SUCCESS,
+            payload : data
+        });
+
+    }catch(error){
+        dispatch({
+            type : CREATE_COMMENT_FAIL,
+            payload : error.response && error.response.data
+            ? error.response.data : error.message
+        });
+    }
+}
+
 
 

@@ -5,6 +5,7 @@
     height: 12vh;
     background: #232323;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .navbar-logo{

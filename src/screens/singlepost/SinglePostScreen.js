@@ -1,11 +1,13 @@
 import React from "react";
-import { Header } from "../../components";
+import { Comments, Header, PostBody } from "../../components";
 
 
 function SinglePostScreen(){
     return (
         <React.Fragment>
             <Header />
+            <PostBody />
+            <Comments />
         </React.Fragment>
     )
 }
